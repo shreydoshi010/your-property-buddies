@@ -122,9 +122,8 @@ const Typography = () => ({
   },
   paragraphMD: {
     fontWeight: 400,
-    fontSize: "16px",
-    lineHeight: "24px",
-    letterSpacing: "-0.176px",
+    fontSize: "20px",
+    lineHeight: "28px",
   },
   paragraphSM: {
     fontWeight: 400,

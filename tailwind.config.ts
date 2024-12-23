@@ -23,10 +23,10 @@ export default {
         foreground: "var(--foreground)",
       },
       screens: {
-        mobile: "480px", // Mobile screens, from 480px
-        tablet: "768px", // Tablet screens, from 768px
-        laptop: "1024px", // Laptop screens, from 1024px
-        desktop: "1280px", // Desktop screens, from 1280px
+        sm: { min: "320px", max: "480px" },
+        md: { min: "481px", max: "768px" },
+        xl: { min: "769px", max: "1024px" },
+        xxl: { min: "1025px", max: "1600px" },
       },
     },
   },

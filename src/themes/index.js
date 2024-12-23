@@ -98,6 +98,7 @@ export default function ThemeCustomization({ children }) {
               labelSM: "span",
               labelXS: "span",
               subHeadingMD: "span",
+              paragraphMD: "p",
               D_p1: "p",
               D_p2: "p",
               D_p3: "p",

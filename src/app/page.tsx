@@ -9,6 +9,7 @@ import image3 from "@/assets/CommunityCard/Artwork container (2).png"
 import image4 from "@/assets/CommunityCard/Avocado1.png"
 import image5 from "@/assets/CommunityCard/Artwork container (1).png"
 import image6 from "@/assets/CommunityCard/Avocado.png"
+import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
   const properties = [
@@ -53,8 +54,8 @@ export default function Home() {
       <main>
         <section>
           <Container>
-            <h1 className="text-4xl font-bold ">Your Property Buddies</h1>
-            <p className="">The best way to find trusted real estate professionals and tradies.</p>
+            <Navbar />
+            <HeroSection />
             <div className="grid grid-cols-3 sm:bg-red-500 gap-5 bg-[#77722E0D] p-4 justify-between">
               {properties.map((property, index) => (
                 <CommunityCard
@@ -68,6 +69,7 @@ export default function Home() {
               ))}
             </div>
             <Navbar />
+            
           </Container>
         </section>
       </main>
