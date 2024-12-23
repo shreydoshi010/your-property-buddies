@@ -1,3 +1,4 @@
+import { Typography } from '@mui/material';
 import Image from 'next/image';
 import React from 'react';
 
@@ -14,7 +15,7 @@ const CommunityCard: React.FC<CommunityCardProps> = ({ title, firstdesc, imageUr
     <div className="border-2 border-[#E8E8E8] rounded-xl shadow-md w-[350px] min-h-max">
       <Image src={imageUrl} alt={title} className="w-full h-40 object-cover rounded-t-xl" />
       <div className="p-4 text-[#02010D]">
-        <h2 className="text-lg font-bold ">{title}</h2>
+        <Typography variant="Desktop_Menu">{title}</Typography>
         <div className="mt-2 text-base">
           <span>{firstdesc}</span>
           <span className='font-bold'>
