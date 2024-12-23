@@ -31,7 +31,7 @@ const Typography = () => ({
   },
   h5: {
     fontWeight: 600,
-    fontSize: "28px",
+    fontSize: "18px",
     lineHeight: "26px",
   },
   h6: {
@@ -147,12 +147,12 @@ const Typography = () => ({
     fontSize: "20px",
     lineHeight: "28px",
   },
-  D_p2:{
+  D_p2: {
     fontWeight: 400,
     fontSize: "18px",
     lineHeight: "26px",
   },
-  D_p3:{
+  D_p3: {
     fontWeight: 400,
     fontSize: "16px",
     lineHeight: "22px",
@@ -162,12 +162,12 @@ const Typography = () => ({
     fontSize: "14px",
     lineHeight: "20px",
   },
-  Buttons_LC:{
+  Buttons_LC: {
     fontWeight: 500,
     fontSize: "17px",
     lineHeight: "17px",
   },
-  Desktop_Menu:{
+  Desktop_Menu: {
     fontWeight: 700,
     fontSize: "18px",
     lineHeight: "27px",
