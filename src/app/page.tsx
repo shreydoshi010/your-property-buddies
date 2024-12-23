@@ -10,6 +10,8 @@ import image4 from "@/assets/CommunityCard/Avocado1.png"
 import image5 from "@/assets/CommunityCard/Artwork container (1).png"
 import image6 from "@/assets/CommunityCard/Avocado.png"
 import HeroSection from "@/components/HeroSection";
+import FeatureCard from "@/components/FeatureCard.jsx"
+import HowItWorks from "@/components/HowItWorks.jsx"
 
 export default function Home() {
   const properties = [
@@ -71,6 +73,8 @@ export default function Home() {
             <Navbar />
             
           </Container>
+          <FeatureCard/>
+          <HowItWorks/>
         </section>
       </main>
     </ThemeCustomization>
