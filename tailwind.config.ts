@@ -22,6 +22,12 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        mobile: "480px", // Mobile screens, from 480px
+        tablet: "768px", // Tablet screens, from 768px
+        laptop: "1024px", // Laptop screens, from 1024px
+        desktop: "1280px", // Desktop screens, from 1280px
+      },
     },
   },
   plugins: [],
