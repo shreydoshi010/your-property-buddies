@@ -2,22 +2,26 @@ import React from "react";
 import { Typography } from "@mui/material";
 import Image from "next/image";
 import groupImg from "@/assets/HomePage/Group.svg";
+import point02Img from "@/assets/HomePage/Group02.svg";
 import pointImg from "@/assets/HomePage/pointLine.svg";
 import { Button } from "./ui/Button";
 
 const HowItWorks = () => {
   return (
-    <section className="flex md:flex-row items-center md:items-start justify-between p-6 md:p-12 w-[80%] mx-auto">
+    <section className="flex md:flex-col sm:flex-col xl:flex-col items-center md:items-start justify-between p-6 md:p-12 w-[80%] mx-auto">
       {/* Text Section */}
-      <div className="max-w-lg pt-12">
+      <div className="max-w-lg ">
         <Typography variant="h2" className="mb-10">
           How it works
         </Typography>
         <div className=" flex items-start gap-x-5">
-          <div>
+          <div className="md:hidden sm:hidden xl:hidden">
             <Image src={pointImg} alt="point image" className="" />
           </div>
-          <div className="space-y-4 -mt-[6px]">
+          <div className=" hidden md:flex sm:flex xl:flex pt-1">
+            <Image src={point02Img} alt="point image" className="" />
+          </div>
+          <div className="space-y-4 md:space-y-3 sm:space-y-3 xl:space-x-3 -mt-[6px]">
             <div className="flex items-start space-x-4">
               <div>
                 <Typography variant="h4">1. Tell us what you need</Typography>
@@ -56,7 +60,7 @@ const HowItWorks = () => {
       </div>
 
       {/* Image Section */}
-      <div className="">
+      <div className="sm:mt-10 md:mt-10 xl:mt-10">
         <Image
           src={groupImg}
           alt="Phone Mockup"

@@ -31,13 +31,13 @@ function FeatureCard() {
     },
   ];
   return (
-    <div className="bg-[#f8f8f5] py-10">
-      <div className="container mx-auto px-4">
+    <div className="bg-[#f8f8f5] pt-3 pb-10 w-full">
+      <div className="mx-auto px-4  w-[95%] xl:w-[98%]">
         {/* <h2 className="text-2xl font-semibold mb-6">What do you need?</h2> */}
         <Typography variant="h2" className=" flex mx-auto justify-center">
           What do you need?
         </Typography>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5">
+        <div className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-1 gap-6 mt-6 w-full">
           {cards.map((card, index) => (
             <div
               key={index}

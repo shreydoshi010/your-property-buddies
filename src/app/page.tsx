@@ -58,6 +58,8 @@ export default function Home() {
           <Container>
             <Navbar />
             <HeroSection />
+            <FeatureCard/>
+            <HowItWorks/>
             <div className="grid grid-cols-3 sm:bg-red-500 gap-5 bg-[#77722E0D] p-4 justify-between">
               {properties.map((property, index) => (
                 <CommunityCard
@@ -69,12 +71,8 @@ export default function Home() {
                   seconddesc={property.seconddesc}
                 />
               ))}
-            </div>
-            <Navbar />
-            
+            </div>  
           </Container>
-          <FeatureCard/>
-          <HowItWorks/>
         </section>
       </main>
     </ThemeCustomization>
