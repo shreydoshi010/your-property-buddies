@@ -27,13 +27,11 @@ export default function Home() {
             <CommunityComponent />
             <WhyUs />
             <JourneyComponent />
-
             <NewsLetter />
-
-            <Needhelp />
-
+            <Needhelp className="sm:hidden md:hidden xl:hidden" title="Need help with real estate?" firstdesc="We’re here for you, let’s get started!" btntitle="Get Started" />
+            <Needhelp className="hidden sm:block  md:block xl:block" title="Need help with real estate?" firstdesc="We’re here for you, let’s get started!" btntitle="FAQS" />
             <Footer />
-            <ConnectComp ifPartner={true}/>
+            {/* <ConnectComp ifPartner={true} /> */}
           </Container>
         </section>
       </main>
