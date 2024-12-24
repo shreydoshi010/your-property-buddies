@@ -28,7 +28,7 @@ const ReviewComponent = () => {
                 <Typography variant="D_p1">
                 Feel free to phone, live chat, or email our dedicated team - we're here to help!
                 </Typography>
-                <Button variant="outline" size="default" className=" mt-10 bg-primary-light">
+                <Button variant="outline" size="default" className=" mt-10 bg-primary-light sm:w-full md:w-full xl:w-full">
                     <Typography variant="button">Get started</Typography>
                 </Button>
             </div>
