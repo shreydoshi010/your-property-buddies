@@ -9,8 +9,8 @@ import { Typewriter } from 'react-simple-typewriter'
 const HeroSection = () => {
   return (
     <section className='bg-primary text-white'>
-      <div className='pt-7 mx-auto w-[80%] flex justify-between items-center'>
-        <div className='w-[422px]'>
+      <div className='pt-7 mx-auto w-[80%] flex justify-between sm:flex-col sm:gap-8 items-center'>
+        <div className='w-[422px] sm:w-auto'>
             <Typography variant='h1'>Find a top-rated</Typography>
             <div className="flex items-center space-x-2">
             <Typography variant="h1" className="">
@@ -26,7 +26,7 @@ const HeroSection = () => {
             </Typography>
           </div>
             <p className='mt-6 D_p1'>We connect you to trusted real estate pros and tradies verified by us, at no cost, across Australia and New Zealand.</p>
-            <Button variant='default' size='default' className='mt-10'><Typography variant='button'>GET STARTED</Typography></Button>
+            <Button variant='default' size='default' className='mt-10 w-full'><Typography variant='button'>GET STARTED</Typography></Button>
         </div>
         <div>
             <Image src={hero} alt='hero' className='h-auto w-[533px]' width={600} height={600} />
