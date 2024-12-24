@@ -4,7 +4,7 @@ interface CommunityCardProps {
     stepNumber?: number;
     title: string;
     description?: string;
-    isLastStep: number;
+    isLastStep: boolean;
 }
 
 const StepCard: React.FC<CommunityCardProps> = ({
