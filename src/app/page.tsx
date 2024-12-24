@@ -24,12 +24,8 @@ export default function Home() {
             <HowItWorks />
             <CommunityComponent />
             <WhyUs />
-            <div className="">
-              <JourneyComponent />
-            </div>
-            <div className="flex bg-[#F8F8F5] justify-center items-center py-14 sm:px-5 md:px-14 xl:px-14">
-              <Needhelp />
-            </div>
+            <JourneyComponent />
+            <Needhelp />
             <Footer />
           </Container>
         </section>
