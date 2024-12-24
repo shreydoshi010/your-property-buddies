@@ -92,10 +92,9 @@ const Typography = () => ({
     letterSpacing: "-0.27px",
   },
   labelMD: {
-    fontWeight: 500,
-    fontSize: "16px",
-    lineHeight: "24px",
-    letterSpacing: "-0.176px",
+    fontWeight: 400,
+    fontSize: "20px",
+    lineHeight: "28px",
   },
   labelSM: {
     fontWeight: 500,

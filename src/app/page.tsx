@@ -12,6 +12,7 @@ import image6 from "@/assets/CommunityCard/Avocado.png"
 import HeroSection from "@/components/HeroSection";
 import FeatureCard from "@/components/FeatureCard.jsx"
 import HowItWorks from "@/components/HowItWorks.jsx"
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const properties = [
@@ -75,6 +76,7 @@ export default function Home() {
           </Container>
           <FeatureCard/>
           <HowItWorks/>
+          <Footer />
         </section>
       </main>
     </ThemeCustomization>

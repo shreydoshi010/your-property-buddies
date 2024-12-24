@@ -1,14 +1,10 @@
 import { useMemo } from "react";
 import { CssBaseline, StyledEngineProvider } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-
-
 import Palette from "./light/palette";
 import Typography from "./light/typography";
 
-
 export default function ThemeCustomization({ children }) {
-
 
   const themeOptions = useMemo(
     () => ({
@@ -31,7 +27,14 @@ export default function ThemeCustomization({ children }) {
       },
       spacing: (...args) => args.map((multiplicator) => `${multiplicator * 4}px`).join(" "),
       palette: Palette("light").palette,
-      typography: Typography(),
+      typography: {
+        ...Typography(),
+        D_p1: {
+          fontWeight: 400,
+          fontSize: "20px",
+          lineHeight: "28px",
+        },
+      },
       border: {
         xxl: "16px",
         xl: "14px",
@@ -60,8 +63,6 @@ export default function ThemeCustomization({ children }) {
         focusError: "0px 0px 0px 2px #FFF, 0px 0px 0px 4px #FFECEB",
         success: "0px 1px 2px 0px rgba(55, 93, 251, 0.08)",
       },
-
-
       components: {
         MuiTypography: {
           styleOverrides: {
@@ -78,10 +79,7 @@ export default function ThemeCustomization({ children }) {
               "&.MuiTypography-paragraphSM": Typography().paragraphSM,
               "&.MuiTypography-paragraphXS": Typography().paragraphXS,
               "&.MuiTypography-subHeadingMD": Typography().subHeadingMD,
-              "&.MuiTypography-subHeadingSM": Typography().subHeadingSM,
-              "&.MuiTypography-subHeadingXS": Typography().subHeadingXS,
-              "&.MuiTypography-subHeadingXXS": Typography().subHeadingXXS,
-              "&.MuiTypography-D_p1": Typography().D_p1,
+              // "&.MuiTypography-D_p1": Typography().D_p1,
               "&.MuiTypography-D_p2": Typography().D_p2,
               "&.MuiTypography-D_p3": Typography().D_p3,
               "&.MuiTypography-M_Caption": Typography().M_Caption,
@@ -113,12 +111,7 @@ export default function ThemeCustomization({ children }) {
     []
   );
 
-
   const themes = createTheme(themeOptions);
-
-
-  console.log(themes);
-
 
   return (
     <StyledEngineProvider injectFirst>
@@ -129,8 +122,3 @@ export default function ThemeCustomization({ children }) {
     </StyledEngineProvider>
   );
 }
-
-
-
-
-
