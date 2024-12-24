@@ -12,6 +12,8 @@ const menuItems = [
     submenu: [
       { label: "Buyer checklist" },
       { label: "Seller checklist" },
+      { label: "Our experts" },
+      { label: "Our tradies" },
     ],
   },
   {
@@ -99,11 +101,11 @@ const Navbar = () => {
                         : "opacity-0 scale-95"
                     }`}
                   >
-                    <ul>
+                    <ul className="p-2">
                       {item.submenu.map((subitem, subIndex) => (
                         <li
                           key={subIndex}
-                          className="px-4 py-2 hover:bg-gray-100"
+                          className="px-4 py-2 rounded-[8px] hover:bg-[#DEDDCD] cursor-pointer"
                         >
                           <Typography variant="body2">{subitem.label}</Typography>
                         </li>

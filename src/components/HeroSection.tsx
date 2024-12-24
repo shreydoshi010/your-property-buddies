@@ -26,7 +26,7 @@ const HeroSection = () => {
             </Typography>
           </div>
             <p className='mt-6 D_p1'>We connect you to trusted real estate pros and tradies verified by us, at no cost, across Australia and New Zealand.</p>
-            <Button variant='default' size='default' className='mt-10 w-full'><Typography variant='button'>GET STARTED</Typography></Button>
+            <Button variant='default' size='default' className='mt-10 sm:w-full'><Typography variant='button'>GET STARTED</Typography></Button>
         </div>
         <div>
             <Image src={hero} alt='hero' className='h-auto w-[533px]' width={600} height={600} />

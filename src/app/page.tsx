@@ -11,6 +11,7 @@ import CommunityComponent from "@/components/CommunityComponent";
 import WhyUs from "@/components/WhyUs";
 import NewsLetter from "@/components/NewsLetter";
 import HowitworkComponent from "@/components/HowitworkComponent";
+import ChatPopup from "@/components/ChatPopup";
 
 export default function Home() {
 
@@ -29,6 +30,7 @@ export default function Home() {
             <NewsLetter />
             <Needhelp className="sm:hidden md:hidden xl:hidden" title="Need help with real estate?" firstdesc="We’re here for you, let’s get started!" btntitle="Get Started" />
             <Needhelp className="hidden sm:block  md:block xl:block" title="Need help with real estate?" firstdesc="We’re here for you, let’s get started!" btntitle="FAQS" />
+            <ChatPopup />
             <Footer />
           </Container>
         </section>

@@ -3,7 +3,7 @@ import React from 'react';
 
 const NewsLetter: React.FC<any> = () => {
     return (
-        <div className='bg-primary text-white py-6'>
+        <div className='bg-primary text-white pt-6 pb-14'>
             <div className='mx-auto w-[60%] sm:w-[90%] md:w-[90%] xl:w-[90%] xxl:w-[70%]'>
                 <p className='D_p1'>Want to keep up with real estate latest news?</p>
                 <div className='flex items-center justify-between sm:hidden xl:hidden md:hidden gap-5'>

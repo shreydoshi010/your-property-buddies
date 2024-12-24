@@ -12,11 +12,18 @@ const Typography = () => ({
     fontWeight: 600,
     fontSize: "34px",
     lineHeight: "39px",
+    "@media (max-width:600px)": {
+      fontSize: "32px",
+    },
   },
   h2: {
     fontWeight: 600,
     fontSize: "32px",
     lineHeight: "38px",
+    "@media (max-width:600px)": {
+      fontSize: "28px",
+      lineHeight: "34px",
+    },
   },
   h3: {
     fontWeight: 700,
@@ -48,6 +55,9 @@ const Typography = () => ({
     fontWeight: 400,
     fontSize: "18px",
     lineHeight: "27px",
+    "@media (max-width:600px)": {
+      fontSize: "16px",
+    },
   },
   body2: {
     fontWeight: 400,

@@ -6,12 +6,12 @@ import StepCard from "./StepCard";
 
 const HowItWorks = ({ title, btntitle, stepData, image }) => {
   return (
-    <section className="flex md:flex-col sm:flex-col xl:flex-col items-center md:items-start justify-between p-6 md:p-12 w-[80%] mx-auto">
+    <section className="flex md:flex-col sm:flex-col xl:flex-col items-center md:items-start justify-between p-6 md:p-12 w-[80%] sm:w-[98%] mx-auto">
       <div className="">
         <Typography variant="h2" className="mb-10">
           {title}
         </Typography>
-        <div className=" flex items-start gap-x-5 w-[380px]">
+        <div className=" flex items-start gap-x-5 w-[380px] sm:w-auto">
           <div className="flex flex-col">
             {stepData.map((step, index) => (
               <StepCard
