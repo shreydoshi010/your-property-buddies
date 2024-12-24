@@ -4,14 +4,13 @@ import Navbar from "@/components/Navbar";
 import ThemeCustomization from "@/themes";
 import HeroSection from "@/components/HeroSection";
 import FeatureCard from "@/components/FeatureCard.jsx"
-import HowItWorks from "@/components/HowItWorks.jsx"
 import Footer from "@/components/Footer";
 import JourneyComponent from "@/components/JourneyComponent";
 import Needhelp from "@/components/Needhelp";
 import CommunityComponent from "@/components/CommunityComponent";
 import WhyUs from "@/components/WhyUs";
 import NewsLetter from "@/components/NewsLetter";
-import ConnectComp from "@/components/ConnectComp.jsx"
+import HowitworkComponent from "@/components/HowitworkComponent";
 
 export default function Home() {
 
@@ -23,7 +22,7 @@ export default function Home() {
             <Navbar />
             <HeroSection />
             <FeatureCard />
-            <HowItWorks />
+            <HowitworkComponent />
             <CommunityComponent />
             <WhyUs />
             <JourneyComponent />
@@ -31,7 +30,6 @@ export default function Home() {
             <Needhelp className="sm:hidden md:hidden xl:hidden" title="Need help with real estate?" firstdesc="We’re here for you, let’s get started!" btntitle="Get Started" />
             <Needhelp className="hidden sm:block  md:block xl:block" title="Need help with real estate?" firstdesc="We’re here for you, let’s get started!" btntitle="FAQS" />
             <Footer />
-            {/* <ConnectComp ifPartner={true} /> */}
           </Container>
         </section>
       </main>
