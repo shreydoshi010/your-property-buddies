@@ -25,13 +25,13 @@ export default function Home() {
             <div className="bg-[#4D4B2F] flex justify-center items-center my-10">
               <JourneyComponent />
             </div>
-            <div className="flex justify-center items-center my-14 sm:px-5 md:px-14 xl:px-14">
+            <div className="flex bg-[#F8F8F5] justify-center items-center py-14 sm:px-5 md:px-14 xl:px-14">
               <Needhelp />
             </div>
+            
+            <Footer />
           </Container>
-          <FeatureCard/>
-          <HowItWorks/>
-          <Footer />
+
         </section>
       </main>
     </ThemeCustomization >

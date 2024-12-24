@@ -4,7 +4,7 @@ import { Button } from './ui/Button'
 
 const Needhelp = () => {
     return (
-        <div className="flex flex-col items-center justify-center text-center h-[260px] w-[875px] sm:w-full md:w-full sm:px-5 md:px-5 bg-white border rounded-lg shadow-md">
+        <div className="flex flex-col items-center justify-center text-center h-[260px] w-[875px] sm:w-full md:w-full sm:px-5 md:px-5 bg-white border rounded-lg shadow-md ">
             <Typography variant="h2" className="text-[#02010D] sm:text-[28px] md:text-[28px]">Need help with real estate?</Typography>
             <Typography variant="D_p1" className="mt-2 text-gray-600">We’re here for you, let’s get started!</Typography>
             {/* <Button
