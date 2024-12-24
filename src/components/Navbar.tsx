@@ -151,7 +151,11 @@ const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div className="fixed top-0 left-0 w-full h-screen bg-primary text-white flex pt-5 flex-col z-50">
+        <div
+        className={`fixed top-0 left-0 w-full h-screen bg-primary text-white flex pt-5 flex-col z-50 transform transition-transform duration-500 ease-in-out ${
+          isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
           {/* Close Button */}
           <div className="flex justify-end items-center px-4 py-3 bg-primary">
             <button
@@ -200,7 +204,7 @@ const Navbar = () => {
           </div>
 
           {/* Sticky Buttons */}
-          <div className="px-4 py-3 bg-primary">
+          <div className="px-4 py-3 bg-primary mb-5">
             <div className="flex gap-4">
               <Button variant="outline" size="default" className="w-full">
                 LOGIN

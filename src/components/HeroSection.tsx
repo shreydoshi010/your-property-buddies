@@ -18,7 +18,7 @@ interface HeroSectionProps {
 const HeroSection: React.FC<HeroSectionProps> = ({ title, btntitle, firstdesc, image, seconddesc, home }) => {
   return (
     <section className='bg-primary text-white'>
-      <div className='pt-7 mx-auto w-[80%] flex justify-between sm:flex-col md:flex-col md:gap-8 sm:gap-8 items-center'>
+      <div className='pt-7 mx-auto w-[80%] flex justify-between sm:flex-col md:flex-col md:gap-8 sm:gap-8 items-center h-[75vh]'>
         <div className='w-[422px] sm:w-auto md:w-auto'>
           <Typography variant='h1'>{title}</Typography>
           <div className="flex items-center space-x-2">
