@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import chatIcon from "@/assets/chat.png"; // Replace with the actual path to the chat icon
+import chatIcon from "@/assets/chat.svg"; // Replace with the actual path to the chat icon
 
 const ChatPopup: React.FC = () => {
   return (
@@ -13,9 +13,8 @@ const ChatPopup: React.FC = () => {
             alt="Chat Icon"
             width={32}
             height={32}
-            className="h-8 w-8"
+            className="h-7 w-7"
           />
-
           {/* Inner Glow Effect */}
           <div className="absolute inset-0 w-full h-full rounded-full bg-white/60 blur-md"></div>
         </div>
