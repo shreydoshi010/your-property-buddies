@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { Typography } from "@mui/material";
 import { Button } from "./ui/Button";
@@ -10,10 +11,11 @@ const menuItems = [
   {
     name: "FOR BUYERS & OWNERS",
     submenu: [
-      { label: "Buyer checklist" },
-      { label: "Seller checklist" },
-      { label: "Our experts" },
-      { label: "Our tradies" },
+      { label: "Buyer checklist",link:"" },
+      { label: "Seller checklist", link:"" },
+      { label: "Our experts", link:"/our-experts" },
+      { label: "Our tradies", link:"/our-tradies" },
+      { label: "Our professionals", link:"/our-professionals" },
     ],
   },
   {
@@ -23,10 +25,10 @@ const menuItems = [
   {
     name: "RESOURCES",
     submenu: [
-      { label: "Our blog" },
-      { label: "About us" },
-      { label: "Professional FAQs" },
-      { label: "Buyers/Owners FAQs" },
+      { label: "Our blog", link: "" },
+      { label: "About us", link: "" },
+      { label: "Professional FAQs", link: "" },
+      { label: "Buyers/Owners FAQs", link: "" },
     ],
   },
 ];
@@ -57,6 +59,7 @@ const Navbar = () => {
       <div className="flex sm:hidden justify-between items-center px-[50px] py-[20px] bg-primary">
         {/* Logo */}
         <div>
+            <Link href="/">
           <Image
             src={logo}
             alt="logo"
@@ -64,6 +67,7 @@ const Navbar = () => {
             width={209}
             height={67}
           />
+          </Link>
         </div>
 
         {/* Menu */}
@@ -95,7 +99,7 @@ const Navbar = () => {
                 {/* Dropdown Content */}
                 {item.submenu.length > 0 && (
                   <div
-                    className={`absolute left-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg transition-all duration-300 ease-in-out ${
+                    className={`absolute left-0 mt-2 w-52 bg-white text-black rounded-md shadow-lg transition-all duration-300 ease-in-out ${
                       openIndex === index
                         ? "opacity-100 scale-100"
                         : "opacity-0 scale-95"
@@ -105,9 +109,9 @@ const Navbar = () => {
                       {item.submenu.map((subitem, subIndex) => (
                         <li
                           key={subIndex}
-                          className="px-4 py-2 rounded-[8px] hover:bg-[#DEDDCD] cursor-pointer"
+                          className="px-4 py-2 rounded-[8px] hover:bg-[#DEDDCD]"
                         >
-                          <Typography variant="body2">{subitem.label}</Typography>
+                          <Link href={subitem.link || "#"}><Typography variant="body2">{subitem.label}</Typography></Link>
                         </li>
                       ))}
                     </ul>
@@ -183,9 +187,7 @@ const Navbar = () => {
                     <ul className="mt-2 space-y-2 pl-4">
                       {item.submenu.map((subitem, subIndex) => (
                         <li key={subIndex}>
-                          <Typography variant="body2">
-                            {subitem.label}
-                          </Typography>
+                          <Link href={subitem.link || "#"}><Typography variant="body2">{subitem.label}</Typography></Link>
                         </li>
                       ))}
                     </ul>
