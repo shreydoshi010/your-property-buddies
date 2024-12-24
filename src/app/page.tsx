@@ -10,6 +10,7 @@ import JourneyComponent from "@/components/JourneyComponent";
 import Needhelp from "@/components/Needhelp";
 import CommunityComponent from "@/components/CommunityComponent";
 import WhyUs from "@/components/WhyUs";
+import NewsLetter from "@/components/NewsLetter";
 
 export default function Home() {
 
@@ -24,9 +25,9 @@ export default function Home() {
             <HowItWorks />
             <CommunityComponent />
             <WhyUs />
-            <div className="">
               <JourneyComponent />
-            </div>
+
+            <NewsLetter />
             <div className="flex bg-[#F8F8F5] justify-center items-center py-14 sm:px-5 md:px-14 xl:px-14">
               <Needhelp />
             </div>

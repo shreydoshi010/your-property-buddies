@@ -8,7 +8,7 @@ import image5 from "@/assets/CommunityCard/Artwork container (1).png"
 import image6 from "@/assets/CommunityCard/Avocado.png"
 import { Button } from './ui/Button';
 import { Typography } from '@mui/material';
-import CarasoulCont from "@/components/carasoul/CarasoulCont"
+import CarasoulCont from "@/components/ui/carasoul/CarasoulCont"
 
 const CommunityComponent = () => {
     const properties = [
