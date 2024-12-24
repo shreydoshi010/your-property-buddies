@@ -106,15 +106,17 @@ function ConnectComp({ ifPartner }) {
                 </div>
               ))}
         </div>
+        <div className="flex justify-center items-center">
         {ifPartner && (
           <Button
             variant="outline"
             size="default"
-            className="w-40 mx-auto flex justify-center items-center"
+            className="bg-primary-light"
           >
             <Typography variant="button">Get Started</Typography>
           </Button>
         )}
+        </div>
       </div>
     </div>
   );

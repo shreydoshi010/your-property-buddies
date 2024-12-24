@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 
 interface CommunityCardProps {
-    stepNumber: number;
+    stepNumber?: number;
     title: string;
     description?: string;
     isLastStep: number;
@@ -22,7 +22,10 @@ const StepCard: React.FC<CommunityCardProps> = ({
                 )}
             </div>
             <div>
-                <Typography variant="h4">{stepNumber}. {title}</Typography>
+                {stepNumber ?
+                    <Typography variant="h4">{stepNumber} {title}</Typography> :
+                    <Typography variant="h4">{title}</Typography>
+                }
                 <Typography variant="D_p2">
                     {description}
                 </Typography>
