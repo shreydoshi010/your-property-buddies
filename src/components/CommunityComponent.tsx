@@ -50,9 +50,9 @@ const CommunityComponent = () => {
     ];
     return (
         <div className=" bg-[#77722E0D]">
-            <div className='w-[80%] mx-auto flex flex-col items-center justify-center gap-5 py-14 sm:hidden md:hidden'>
+            <div className='w-[80%] mx-auto flex flex-col items-center justify-center py-14 sm:hidden md:hidden xl:hidden'>
                 <Typography variant="h2">Our real estate community of pros and tradies</Typography>
-                <div className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 sm:w-full md:w-full xl:grid-cols-2 gap-10 xxl:gap-16 justify-items-center mt-5">
+                <div className="grid grid-cols-3 gap-10 xxl:gap-16 justify-items-center mt-5">
                     {properties.map((property, index) => (
                         <CommunityCard
                             key={index}
@@ -64,17 +64,17 @@ const CommunityComponent = () => {
                         />
                     ))}
                 </div>
-                <div className="flex sm:flex-col md:flex-col gap-8 md:gap-2 sm:gap-2">
+                <div className="flex gap-8 ">
                     <Button variant="outline" size="default" className="bg-primary-light mt-10">
                         <Typography variant="button">Get Started</Typography>
                     </Button>
-                    <Button variant="outlinePrimary" size="default" className="mt-10 sm:mt-0 md:mt-0">
+                    <Button variant="outlinePrimary" size="default" className="mt-10">
                         <Typography variant="button">DISCOVER MORE PROFESSIONALS</Typography>
                     </Button>
                 </div>
             </div>
             {/* mobile Design start */}
-            <div className='p-4 hidden sm:block md:block'>
+            <div className='p-4 hidden sm:block md:block xl:block'>
                 <Typography className='text-center' variant="h2">Find your real estate professionals</Typography>
                 <CarasoulCont
                     options={{ dragFree: false }}
