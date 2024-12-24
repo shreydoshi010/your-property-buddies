@@ -11,6 +11,7 @@ import Footer from '@/components/Footer'
 import ProfessionWork from '@/components/ProfessionWork'
 import GrowthComponent from '@/components/GrowthComponent'
 import hero from '@/assets/Our-Professionals/HeroImage.png'
+import ChatPopup from '@/components/ChatPopup'
 
 const Page = () => {
     return (
@@ -22,13 +23,14 @@ const Page = () => {
                     firstdesc="Are you dedicated to putting your clients first in everything you do?"
                     seconddesc="Join Your Property Buddies to seamlessly connect with prospective clients actively seeking your expertise, fostering lasting relationships and a steady workflow."
                     btntitle="GET STARTED"
-                    image={hero} 
+                    image={hero}
                 />
                 <GrowthComponent />
                 <ConnectComp ifPartner={true} />
                 <ProfessionWork />
                 <NewsLetter />
                 <Needhelp title="Need help with real estate?" firstdesc="We’re here for you, let’s get started!" btntitle="FAQS" />
+                <ChatPopup />
                 <Footer />
             </Container>
         </ThemeCustomization>
