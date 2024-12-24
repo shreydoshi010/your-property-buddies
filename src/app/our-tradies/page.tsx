@@ -10,13 +10,19 @@ import HeroSection from '@/components/HeroSection'
 import Footer from '@/components/Footer'
 import TradiesWork from '@/components/TradiesWork'
 import ReviewComponent from "@/components/ReviewComponent"
+import hero from '@/assets/Our-Tradies/HeroImage.png'
 
 const Page = () => {
     return (
         <ThemeCustomization>
             <Container>
                 <Navbar />
-                <HeroSection />
+                <HeroSection
+                    title="Connect with our top tradies"
+                    firstdesc="From roofers to cleaners, connect with highly skilled tradies across Australia and New Zealand."
+                    btntitle="GET STARTED"
+                    image={hero}
+                />
                 <ConnectComp ifPartner={false} />
                 <TradiesWork />
                 <ReviewComponent />
