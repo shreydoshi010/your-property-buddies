@@ -6,7 +6,7 @@ const NewsLetter: React.FC<any> = () => {
         <div className='bg-primary text-white py-6'>
             <div className='mx-auto w-[60%] sm:w-[90%] md:w-[90%] xl:w-[90%] xxl:w-[70%]'>
                 <p className='D_p1'>Want to keep up with real estate latest news?</p>
-                <div className='flex items-center justify-between sm:hidden xl:hidden gap-5'>
+                <div className='flex items-center justify-between sm:hidden xl:hidden md:hidden gap-5'>
                     <div><Typography variant='h2' className='mt-4'>Subscribe to our Buddies’ Bulletin </Typography></div>
 
                     <div className="flex justify-center h-[50px] bg-primary border-2 border-secondary rounded-[4px]">

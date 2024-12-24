@@ -82,7 +82,7 @@ const CommunityComponent = () => {
                     classname="mt-10 gap-5"
                 >
                     {properties.map((property, index) => (
-                        <div key={index} className='w-[100%] sm:flex-[0_0_90%] md:flex-[0_0_50%]'>
+                        <div key={index} className='w-[100%] sm:flex-[0_0_90%] xl:flex-[0_0_45%] md:flex-[0_0_50%]'>
                             <CommunityCard
                                 title={property.title}
                                 firstdesc={property.firstdesc}
