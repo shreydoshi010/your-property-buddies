@@ -41,6 +41,9 @@ export default {
         ".D_p2": {
           "@apply font-normal text-[18px] leading-[26px]": {},
         },
+        ".Desktop_Menu": {
+          "@apply font-bold text-[18px] leading-[27px]": {},
+        },
       };
       addUtilities(newUtilities);
     },
