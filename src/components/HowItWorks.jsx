@@ -6,7 +6,7 @@ import StepCard from "./StepCard";
 
 const HowItWorks = ({ title, btntitle, stepData, image }) => {
   return (
-    <section className="flex md:flex-col sm:flex-col xl:flex-col items-center md:items-start justify-between p-6 md:p-12 w-[80%] mx-auto">
+    <section className="flex md:flex-col sm:flex-col xl:flex-col items-center md:items-start justify-center p-6 md:p-12 w-[80%] sm:w-[90%] mx-auto">
       <div className="w-[55%] sm:w-full md:w-full xl:w-full">
         <Typography variant="h2" className="mb-10 w-[60%] sm:w-full md:w-full xl:w-full">
           {title}

@@ -6,16 +6,17 @@ import { Button } from "./ui/Button";
 import logo from "@/assets/logo.png";
 import DownArrow from "@/assets/downArrow.svg";
 import close from "@/assets/close.svg";
+import menu from "@/assets/menu.svg";
 
 const menuItems = [
   {
     name: "FOR BUYERS & OWNERS",
     submenu: [
-      { label: "Buyer checklist",link:"" },
-      { label: "Seller checklist", link:"" },
-      { label: "Our experts", link:"/our-experts" },
-      { label: "Our tradies", link:"/our-tradies" },
-      { label: "Our professionals", link:"/our-professionals" },
+      { label: "Buyer checklist", link: "" },
+      { label: "Seller checklist", link: "" },
+      { label: "Our experts", link: "/our-experts" },
+      { label: "Our tradies", link: "/our-tradies" },
+      { label: "Our professionals", link: "/our-professionals" },
     ],
   },
   {
@@ -56,17 +57,17 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <div className="flex sm:hidden justify-between items-center px-[50px] py-[20px] bg-primary">
+      <div className="flex sm:hidden md:hidden xl:hidden justify-between items-center px-[50px] py-[20px] bg-primary">
         {/* Logo */}
         <div>
-            <Link href="/">
-          <Image
-            src={logo}
-            alt="logo"
-            className="h-auto w-40"
-            width={209}
-            height={67}
-          />
+          <Link href="/">
+            <Image
+              src={logo}
+              alt="logo"
+              className="h-auto w-40"
+              width={209}
+              height={67}
+            />
           </Link>
         </div>
 
@@ -87,9 +88,8 @@ const Navbar = () => {
                   <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-secondary group-hover:w-full transition-all duration-300"></span>
                   {item.submenu.length > 0 && (
                     <span
-                      className={`transform transition-transform ${
-                        openIndex === index ? "rotate-180" : "rotate-0"
-                      }`}
+                      className={`transform transition-transform ${openIndex === index ? "rotate-180" : "rotate-0"
+                        }`}
                     >
                       <Image src={DownArrow} alt="down-arrow" />
                     </span>
@@ -99,11 +99,10 @@ const Navbar = () => {
                 {/* Dropdown Content */}
                 {item.submenu.length > 0 && (
                   <div
-                    className={`absolute left-0 mt-2 w-52 bg-white text-black rounded-md shadow-lg transition-all duration-300 ease-in-out ${
-                      openIndex === index
-                        ? "opacity-100 scale-100"
-                        : "opacity-0 scale-95"
-                    }`}
+                    className={`absolute left-0 mt-2 w-52 bg-white text-black rounded-md shadow-lg transition-all duration-300 ease-in-out ${openIndex === index
+                      ? "opacity-100 scale-100"
+                      : "opacity-0 scale-95"
+                      }`}
                   >
                     <ul className="p-2">
                       {item.submenu.map((subitem, subIndex) => (
@@ -134,16 +133,19 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navbar */}
-      <div className="md:hidden xl:hidden xxl:hidden flex justify-between items-center px-4 py-3 bg-primary">
-        <Image src={logo} alt="logo" width={150} height={50} />
+      <div className="hidden sm:block md:block xl:block">
+        <div className="flex justify-between items-center px-4 py-3 bg-primary">
+          <Image src={logo} alt="logo" width={150} height={50} />
 
-        {/* Hamburger Menu */}
-        <button
-          className="text-white focus:outline-none"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        >
-          {isMobileMenuOpen ? "CLOSE" : "MENU"}
-        </button>
+          {/* Hamburger Menu */}
+          <button
+            className="text-white focus:outline-none flex justify-center gap-2 items-center"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? "CLOSE" : "MENU"}
+            <Image src={menu} alt="logo" width={50} height={50} />
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu Dropdown */}
@@ -176,9 +178,8 @@ const Navbar = () => {
                         <Image
                           src={DownArrow}
                           alt="down-arrow"
-                          className={`transform transition-transform ${
-                            openIndex === index ? "rotate-180" : "rotate-0"
-                          }`}
+                          className={`transform transition-transform ${openIndex === index ? "rotate-180" : "rotate-0"
+                            }`}
                         />
                       </button>
                     )}
