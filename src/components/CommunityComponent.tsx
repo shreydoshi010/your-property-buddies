@@ -8,6 +8,7 @@ import image5 from "@/assets/CommunityCard/Artwork container (1).png"
 import image6 from "@/assets/CommunityCard/Avocado.png"
 import { Button } from './ui/Button';
 import { Typography } from '@mui/material';
+import CarasoulCont from "@/components/carasoul/CarasoulCont"
 
 const CommunityComponent = () => {
     const properties = [
@@ -49,7 +50,7 @@ const CommunityComponent = () => {
     ];
     return (
         <div className=" bg-[#77722E0D]">
-            <div className='w-[80%] mx-auto flex flex-col items-center justify-center gap-5 py-14'>
+            <div className='w-[80%] mx-auto flex flex-col items-center justify-center gap-5 py-14 sm:hidden md:hidden'>
                 <Typography variant="h2">Our real estate community of pros and tradies</Typography>
                 <div className="grid xxl:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 sm:w-full md:w-full xl:grid-cols-2 gap-10 justify-items-center mt-5">
                     {properties.map((property, index) => (
@@ -63,15 +64,45 @@ const CommunityComponent = () => {
                         />
                     ))}
                 </div>
-                <div className="flex sm:flex-col md:flex-col">
+                <div className="flex sm:flex-col md:flex-col gap-8 md:gap-2 sm:gap-2">
                     <Button variant="outline" size="default" className="bg-[#77722E] mt-10">
                         <Typography variant="button">Get Started</Typography>
                     </Button>
-                    <Button variant="outlinePrimary" size="default" className="mt-10 sm:mt-0">
+                    <Button variant="outlinePrimary" size="default" className="mt-10 sm:mt-0 md:mt-0">
                         <Typography variant="button">DISCOVER MORE PROFESSIONALS</Typography>
                     </Button>
                 </div>
             </div>
+            {/* mobile Design start */}
+            <div className='p-4 hidden sm:block md:block'>
+                <Typography className='text-center' variant="h2">Find your real estate professionals</Typography>
+                <CarasoulCont
+                    options={{ dragFree: false }}
+                    isDot={true}
+                    classname="mt-10 gap-5"
+                >
+                    {properties.map((property, index) => (
+                        <div key={index} className='w-[100%] sm:flex-[0_0_90%] md:flex-[0_0_50%]'>
+                            <CommunityCard
+                                title={property.title}
+                                firstdesc={property.firstdesc}
+                                imageUrl={property.imageUrl}
+                                ownerdesc={property.ownerdesc}
+                                seconddesc={property.seconddesc}
+                            />
+                        </div>
+                    ))}
+                </CarasoulCont>
+                <div className="flex flex-col gap-8 px-2">
+                    <Button variant="outline" size="default" className="bg-[#77722E] mt-10">
+                        <Typography variant="button">Get Started</Typography>
+                    </Button>
+                    <Button variant="outlinePrimary" size="default">
+                        <Typography variant="button">DISCOVER MORE PROFESSIONALS</Typography>
+                    </Button>
+                </div>
+            </div>
+
         </div>
     )
 }

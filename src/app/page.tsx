@@ -30,10 +30,8 @@ export default function Home() {
             <div className="flex bg-[#F8F8F5] justify-center items-center py-14 sm:px-5 md:px-14 xl:px-14">
               <Needhelp />
             </div>
-            
             <Footer />
           </Container>
-
         </section>
       </main>
     </ThemeCustomization >
