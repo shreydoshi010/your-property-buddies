@@ -14,7 +14,7 @@ const Needhelp = () => {
             >
                 <Typography variant="button">GET STARTED</Typography>
             </Button> */}
-            <Button variant="outline" size="default" className="bg-[#77722E] mt-10">
+            <Button variant="outline" size="default" className="bg-primary-light mt-10">
                 <Typography variant="button">Get Started</Typography>
             </Button>
         </div>

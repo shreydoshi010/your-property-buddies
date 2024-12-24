@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import JourneyComponent from "@/components/JourneyComponent";
 import Needhelp from "@/components/Needhelp";
 import CommunityComponent from "@/components/CommunityComponent";
+import WhyUs from "@/components/WhyUs";
 
 export default function Home() {
 
@@ -22,7 +23,8 @@ export default function Home() {
             <FeatureCard />
             <HowItWorks />
             <CommunityComponent />
-            <div className="bg-[#4D4B2F] flex justify-center items-center my-10">
+            <WhyUs />
+            <div className="">
               <JourneyComponent />
             </div>
             <div className="flex bg-[#F8F8F5] justify-center items-center py-14 sm:px-5 md:px-14 xl:px-14">
