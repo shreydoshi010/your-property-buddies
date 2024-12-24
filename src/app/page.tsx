@@ -12,6 +12,7 @@ import WhyUs from "@/components/WhyUs";
 import NewsLetter from "@/components/NewsLetter";
 import HowitworkComponent from "@/components/HowitworkComponent";
 import ChatPopup from "@/components/ChatPopup";
+import hero from '@/assets/hero.png'
 
 export default function Home() {
 
@@ -21,7 +22,13 @@ export default function Home() {
         <section>
           <Container>
             <Navbar />
-            <HeroSection />
+            <HeroSection
+              title="Find a top-rated"
+              firstdesc="We connect you to trusted real estate pros and tradies verified by us, at no cost, across Australia and New Zealand."
+              btntitle="GET STARTED"
+              image={hero}
+              home={true}
+            />
             <FeatureCard />
             <HowitworkComponent />
             <CommunityComponent />

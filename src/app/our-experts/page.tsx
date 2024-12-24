@@ -10,13 +10,19 @@ import Needhelp from '@/components/Needhelp'
 import Navbar from '@/components/Navbar'
 import HeroSection from '@/components/HeroSection'
 import Footer from '@/components/Footer'
+import hero from '@/assets/Our-Experts/HeroImage.png'
 
 const Page = () => {
     return (
         <ThemeCustomization>
             <Container>
                 <Navbar />
-                <HeroSection />
+                <HeroSection
+                    title="Connect with our top real estate experts"
+                    firstdesc="From staging your home to securing your mortgage. Access top real estate experts across Australia and New Zealand."
+                    btntitle="GET STARTED"
+                    image={hero}
+                />
                 <ConnectComp ifPartner={false} />
                 <ExpertsWork />
                 <CommunityComponent />
