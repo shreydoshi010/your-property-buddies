@@ -1,21 +1,28 @@
 import { Typography } from "@mui/material";
 import React from "react";
 import { Button } from "./ui/Button";
+interface JourneyCardProps {
+    title: string;
+    firstdesc: string;
+    seconddesc?: string;
+    btntitle: string;
+}
 
-const JourneyCard = () => {
+
+const JourneyCard: React.FC<JourneyCardProps> = ({ title, btntitle, firstdesc, seconddesc }) => {
     return (
-        <div className="bg-white p-6 rounded-xl w-[425px] mx-auto">
+        <div className="bg-white p-6 rounded-xl w-[425px] mx-auto sm:w-full md:w-full">
             <Typography variant="h3" className=" mb-4">
-                Buying real estate and don’t know where to start?
+                {title}
             </Typography>
             <Typography variant="D_p1">
-                Buyer’s Blueprint: Your complimentary standardised guide for buying real estate.
+                {firstdesc}
             </Typography>
             <Typography variant="D_p1">
-                Explore our buying checklist, designed to guide you every step of the way.
+                {seconddesc}
             </Typography>
-            <Button variant="outline" size="default" className="mt-4 w-full">
-                <Typography variant="button">BUYER’S CHECKLIST</Typography>
+            <Button variant="outline" size="default" className="bg-primary-light mt-4 w-full">
+                <Typography variant="button">{btntitle}</Typography>
             </Button>
         </div>
     );
