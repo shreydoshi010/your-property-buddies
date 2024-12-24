@@ -26,9 +26,9 @@ const StepCard: React.FC<CommunityCardProps> = ({
                     <Typography variant="h4">{stepNumber} {title}</Typography> :
                     <Typography variant="h4">{title}</Typography>
                 }
-                <Typography variant="D_p2">
+                <p className="D_p2">
                     {description}
-                </Typography>
+                </p>
             </div>
         </div>
     );

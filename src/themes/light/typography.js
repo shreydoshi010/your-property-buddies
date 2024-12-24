@@ -1,4 +1,3 @@
-import { letterSpacing } from "@mui/system";
 
 const Typography = () => ({
   htmlFontSize: 16,
