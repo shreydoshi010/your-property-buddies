@@ -135,26 +135,27 @@ const Navbar = () => {
       {/* Mobile Navbar */}
       <div className="hidden sm:block md:block xl:block">
         <div className="flex justify-between items-center px-4 py-3 bg-primary">
-          <Image src={logo} alt="logo" width={150} height={50} />
-
+          <Link href="/">
+            <Image src={logo} alt="logo" width={150} height={50} />
+          </Link>
           {/* Hamburger Menu */}
           <button
             className="text-white focus:outline-none flex justify-center gap-2 items-center"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? "CLOSE" : "MENU"}
-            <Image src={menu} alt="logo" width={50} height={50} />
+            <Image src={menu} alt="logo" width={38} height={50} />
           </button>
         </div>
       </div>
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div className="fixed top-0 left-0 w-full h-screen bg-primary text-white flex pt-14 flex-col z-50">
+        <div className="fixed top-0 left-0 w-full h-screen bg-primary text-white flex pt-5 flex-col z-50">
           {/* Close Button */}
           <div className="flex justify-end items-center px-4 py-3 bg-primary">
             <button
-              className="text-white focus:outline-none text-lg font-bold flex items-center gap-2"
+              className="text-white focus:outline-none text-base font-bold flex items-center gap-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               CLOSE
@@ -164,7 +165,7 @@ const Navbar = () => {
 
           {/* Menu Items */}
           <div className="flex-1 overflow-y-auto px-4">
-            <ul className="flex flex-col gap-7 mt-12">
+            <ul className="flex flex-col gap-7 mt-5">
               {menuItems.map((item, index) => (
                 <li key={index}>
                   <div className="flex justify-between items-center">
