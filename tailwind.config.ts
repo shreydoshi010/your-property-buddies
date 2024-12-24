@@ -44,6 +44,9 @@ export default {
         ".Desktop_Menu": {
           "@apply font-bold text-[18px] leading-[27px]": {},
         },
+        ".M_Caption":{
+          "@apply font-normal text-[14px] leading-[20px]": {},
+        }
       };
       addUtilities(newUtilities);
     },

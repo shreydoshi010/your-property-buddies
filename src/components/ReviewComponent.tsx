@@ -19,15 +19,15 @@ const ReviewComponent = () => {
                 <Typography variant="h2" className="mb-5">
                     Reviews
                 </Typography>
-                <Typography variant="D_p1" className="mb-8">
+                <p  className="D_p1 mb-8">
                 Once the job is done, pay the tradie directly and place a review to help other homeowners.
-                </Typography>
+                </p>
                 <Typography variant="h4" className="mb-2">
                 Have a question or need a hand? 
                 </Typography>
-                <Typography variant="D_p1">
+                <p className="D_p1 mb-8">
                 Feel free to phone, live chat, or email our dedicated team - we're here to help!
-                </Typography>
+                </p>
                 <Button variant="outline" size="default" className=" mt-10 bg-primary-light sm:w-full md:w-full xl:w-full">
                     <Typography variant="button">Get started</Typography>
                 </Button>

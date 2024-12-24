@@ -3,7 +3,7 @@ import Container from "@/components/Container";
 import Navbar from "@/components/Navbar";
 import ThemeCustomization from "@/themes";
 import HeroSection from "@/components/HeroSection";
-import FeatureCard from "@/components/FeatureCard.jsx"
+import FeatureCard from "@/components/FeatureCard"
 import Footer from "@/components/Footer";
 import JourneyComponent from "@/components/JourneyComponent";
 import Needhelp from "@/components/Needhelp";
