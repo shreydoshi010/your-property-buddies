@@ -30,7 +30,7 @@ const GrowthComponent = () => {
         },
     ]
     return (
-        <div className='py-10 w-[90%] mx-auto flex justify-center items-center flex-col'>
+        <div className='py-10 w-[90%] mx-auto flex justify-center text-center items-center flex-col'>
             <Typography variant='h2' className='mt-4'>Join our growing community of:</Typography>
             <div className='grid grid-cols-4 gap-8 my-8 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2'>
                 {data.map((item, index) => (

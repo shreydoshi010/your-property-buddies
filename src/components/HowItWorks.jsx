@@ -11,8 +11,7 @@ const HowItWorks = ({ title, btntitle, stepData, image }) => {
         <Typography variant="h2" className="mb-10 w-[60%] sm:w-full md:w-full xl:w-full">
           {title}
         </Typography>
-        <div className=" flex items-start gap-x-5 w-[380px]">
-          <div className="flex flex-col">
+        <div className="w-[380px] sm:w-full md:w-full xl:w-full">
             {stepData.map((step, index) => (
               <StepCard
                 key={index}
@@ -21,7 +20,6 @@ const HowItWorks = ({ title, btntitle, stepData, image }) => {
                 isLastStep={index === stepData.length - 1}
               />
             ))}
-          </div>
         </div>
         <Button variant="outline" size="default" className=" mt-10 bg-primary-light">
           <Typography variant="button">{btntitle}</Typography>
