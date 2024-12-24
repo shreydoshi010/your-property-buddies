@@ -6,15 +6,18 @@ const ProfessionWork = () => {
     const stepData = [
         {
             title: "Submit your request online",
-            description: "It takes less than two minutes to get started."
+            description: "It takes less than two minutes to get started.",
+            isLastStep: false
         },
         {
             title: "Get your application approved",
-            description: "If we require more information from you we’ll be in touch."
+            description: "If we require more information from you we’ll be in touch.",
+            isLastStep: false
         },
         {
             title: "Start getting recommended",
-            description: "Your profile is visible and potential clients will be able to get in touch with you."
+            description: "Your profile is visible and potential clients will be able to get in touch with you.",
+            isLastStep: true
         }
     ]
     return (
