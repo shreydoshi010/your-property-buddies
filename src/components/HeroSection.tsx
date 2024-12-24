@@ -25,7 +25,7 @@ const HeroSection = () => {
               />
             </Typography>
           </div>
-            <Typography variant='D_p1' className='mt-6'>We connect you to trusted real estate pros and tradies verified by us, at no cost, across Australia and New Zealand.</Typography>
+            <p className='mt-6 D_p1'>We connect you to trusted real estate pros and tradies verified by us, at no cost, across Australia and New Zealand.</p>
             <Button variant='default' size='default' className='mt-10'><Typography variant='button'>GET STARTED</Typography></Button>
         </div>
         <div>

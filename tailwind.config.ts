@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import type { PluginAPI } from "tailwindcss/types/config";
 
 export default {
   content: [
@@ -30,5 +31,18 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function (api: PluginAPI) {
+      const { addUtilities } = api;
+      const newUtilities = {
+        ".D_p1": {
+          "@apply font-normal text-[20px] leading-[28px]": {},
+        },
+        ".D_p2": {
+          "@apply font-normal text-[18px] leading-[26px]": {},
+        },
+      };
+      addUtilities(newUtilities);
+    },
+  ],
 } satisfies Config;

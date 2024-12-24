@@ -10,11 +10,11 @@ const HowItWorks = () => {
   return (
     <section className="flex md:flex-col sm:flex-col xl:flex-col items-center md:items-start justify-between p-6 md:p-12 w-[80%] mx-auto">
       {/* Text Section */}
-      <div className="max-w-lg ">
+      <div className="">
         <Typography variant="h2" className="mb-10">
           How it works
         </Typography>
-        <div className=" flex items-start gap-x-5">
+        <div className=" flex items-start gap-x-5 w-[380px]">
           <div className="md:hidden sm:hidden xl:hidden">
             <Image src={pointImg} alt="point image" className="" />
           </div>

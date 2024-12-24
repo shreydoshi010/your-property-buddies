@@ -13,17 +13,17 @@ const WhyUs = () => {
                     <div className='mt-4 flex flex-col gap-8'>
                         <div>
                             <Typography variant='h4' className=''>Your Real Estate ally</Typography>
-                            <Typography variant='D_p2'>We’ll keep the bar high for professionals we partner with while empowering you with real estate knowledge. So you can navigate the real estate market with confidence.</Typography>
+                            <p className='D_p2'>We’ll keep the bar high for professionals we partner with while empowering you with real estate knowledge. So you can navigate the real estate market with confidence.</p>
                         </div>
                         <div>
                             <Typography variant='h4' className=''>Unbiased advice
                             </Typography>
-                            <Typography variant='D_p2'>We will always strive to offer impartial and agnostic referrals. Our recommendations are based only on merits and reputation. We’ll never have hidden agendas.</Typography>
+                            <p className='D_p2'>We will always strive to offer impartial and agnostic referrals. Our recommendations are based only on merits and reputation. We’ll never have hidden agendas.</p>
                         </div>
                         <div>
                             <Typography variant='h4' className=''>We are Free!
                             </Typography>
-                            <Typography variant='D_p2'>Our service is free for future and current real estate buyers and owners, with no obligation.</Typography>
+                            <p className='D_p2'>Our service is free for future and current real estate buyers and owners, with no obligation.</p>
                         </div>
                     </div>
                 </div>

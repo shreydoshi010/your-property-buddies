@@ -27,7 +27,7 @@ const JourneyComponent = () => {
         <div className='bg-primary p-14 sm:p-5 md:p-5'>
             <div className='flex justify-center flex-col items-center text-white text-center'>
                 <Typography variant="h2" className='w-[520px] sm:w-full md:w-full'>Start your real estate journey with Your Property Buddies</Typography>
-                <Typography variant="D_p1" className='mt-6'>Real estate professionals connections and guidance at your fingertips</Typography>
+                <p className='D_p1 mt-6'>Real estate professionals connections and guidance at your fingertips</p>
             </div>
             <div className="mt-14 flex justify-center items-center sm:flex-col md:flex-col gap-4">
                 {cardData.map((data, index) => (

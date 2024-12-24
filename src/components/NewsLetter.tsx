@@ -5,7 +5,7 @@ const NewsLetter: React.FC<any> = () => {
     return (
         <div className='bg-primary text-white py-14'>
             <div className='mx-auto w-[65%]'>
-                <Typography variant='D_p1' className=''>Want to keep up with real estate latest news?</Typography>
+                <p className='D_p1'>Want to keep up with real estate latest news?</p>
                 <div className='flex items-center justify-between'>
                     <div><Typography variant='h2' className='mt-4'>Subscribe to our Buddies’ Bulletin </Typography></div>
                     

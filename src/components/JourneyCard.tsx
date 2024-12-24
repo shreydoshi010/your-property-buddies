@@ -15,12 +15,12 @@ const JourneyCard: React.FC<JourneyCardProps> = ({ title, btntitle, firstdesc, s
             <Typography variant="h3" className=" mb-4">
                 {title}
             </Typography>
-            <Typography variant="D_p1">
+            <p className="D_p1">
                 {firstdesc}
-            </Typography>
-            <Typography variant="D_p1">
+            </p>
+            <p className="D_p1 mt-2">
                 {seconddesc}
-            </Typography>
+            </p>
             <Button variant="outline" size="default" className="bg-primary-light mt-4 w-full">
                 <Typography variant="button">{btntitle}</Typography>
             </Button>
