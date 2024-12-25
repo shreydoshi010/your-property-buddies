@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-     "build:start": "git pull && yarn install && rimraf .next && next build && next start -p 9190",
-    "testbuild:start": "git pull && yarn install && rimraf .next && next build && next start -p 9190"
+    "build:start": "git pull && yarn install && next build && next start -p 9195",
+    "testbuild:start": "git pull && yarn install && next build && next start -p 9195"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
