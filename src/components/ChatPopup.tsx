@@ -9,6 +9,7 @@ const ChatPopup: React.FC = () => {
         <div className="relative">
           {/* Chat Icon */}
           <Image
+            loading="lazy"
             src={chatIcon}
             alt="Chat Icon"
             width={32}

@@ -33,12 +33,14 @@ const Footer = () => {
     return (
         <footer className='relative'>
             <Image
+                loading="lazy"
                 src={VectorLine}
                 alt="Decorative Line"
                 className="absolute inset-0 w-full"
             />
             <div className='bg-primary text-white'>
                 <Image
+                    loading="lazy"
                     src={FooterWave}
                     alt="Footer Wave"
                     className="-mt-1 w-full"
@@ -46,15 +48,15 @@ const Footer = () => {
                 <div className='mx-14 sm:mx-7 md:mx-7 pt-20 pb-10'>
                     <div className='pb-10 flex justify-between sm:flex-col sm:gap-8 md:flex-col md:gap-8'>
                         <div>
-                            <Image src={logo} alt='logo' className='h-auto w-[172px]' width={100} height={100} />
+                            <Image loading="lazy" src={logo} alt='logo' className='h-auto w-[172px]' width={100} height={100} />
                             <Typography variant='h4' className='mt-6'>From buying to selling real estate, we’ve got you covered!</Typography>
                             <div className='mt-10 sm:hidden md:hidden'>
                                 <ul className='flex gap-4'>
                                     <li>
-                                        <Link href='/'><Image src={Instagram} alt="instagram" /></Link>
+                                        <Link href='/'><Image src={Instagram} loading="lazy" alt="instagram" /></Link>
                                     </li>
                                     <li>
-                                        <Link href='/'><Image src={Linkedin} alt="linkedin" /></Link>
+                                        <Link href='/'><Image src={Linkedin} loading="lazy" alt="linkedin" /></Link>
                                     </li>
                                 </ul>
                             </div>
@@ -79,10 +81,10 @@ const Footer = () => {
                     <div className='sm:pb-7 hidden sm:block md:block md:pb-7'>
                         <ul className='flex gap-4'>
                             <li>
-                                <Link href='/'><Image src={Instagram} alt="instagram" /></Link>
+                                <Link href='/'><Image src={Instagram} loading="lazy" alt="instagram" /></Link>
                             </li>
                             <li>
-                                <Link href='/'><Image src={Linkedin} alt="linkedin" /></Link>
+                                <Link href='/'><Image src={Linkedin} loading="lazy" alt="linkedin" /></Link>
                             </li>
                         </ul>
                     </div>
@@ -91,10 +93,10 @@ const Footer = () => {
                         <div>
                             <ul className='flex gap-20 sm:gap-1 sm:justify-between sm:flex-col md:gap-1 md:justify-between md:flex-col'>
                                 <li>
-                                    <Link href='/' className='flex gap-4'><Image src={ExternalLink} alt="link" /><Typography variant='body2'>Privacy policy</Typography></Link>
+                                    <Link href='/' className='flex gap-4'><Image loading="lazy" src={ExternalLink} alt="link" /><Typography variant='body2'>Privacy policy</Typography></Link>
                                 </li>
                                 <li>
-                                    <Link href='/' className='flex gap-4'><Image src={ExternalLink} alt="link" /><Typography variant='body2'>Terms & conditions</Typography></Link>
+                                    <Link href='/' className='flex gap-4'><Image loading="lazy" src={ExternalLink} alt="link" /><Typography variant='body2'>Terms & conditions</Typography></Link>
                                 </li>
                             </ul>
                         </div>

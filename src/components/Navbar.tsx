@@ -62,6 +62,7 @@ const Navbar = () => {
         <div>
           <Link href="/">
             <Image
+              loading="eager"
               src={logo}
               alt="logo"
               className="h-auto w-40"
@@ -91,7 +92,7 @@ const Navbar = () => {
                       className={`transform transition-transform ${openIndex === index ? "rotate-180" : "rotate-0"
                         }`}
                     >
-                      <Image src={DownArrow} alt="down-arrow" />
+                      <Image src={DownArrow} loading="eager" alt="down-arrow" />
                     </span>
                   )}
                 </div>
@@ -136,7 +137,7 @@ const Navbar = () => {
       <div className="hidden sm:block md:block xl:block">
         <div className="flex justify-between items-center px-4 py-3 bg-primary">
           <Link href="/">
-            <Image src={logo} alt="logo" width={150} height={50} />
+            <Image loading="eager" src={logo} alt="logo" width={150} height={50} />
           </Link>
           {/* Hamburger Menu */}
           <button
@@ -144,7 +145,7 @@ const Navbar = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? "CLOSE" : "MENU"}
-            <Image src={menu} alt="logo" width={38} height={50} />
+            <Image loading="eager" src={menu} alt="logo" width={38} height={50} />
           </button>
         </div>
       </div>
@@ -152,10 +153,9 @@ const Navbar = () => {
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
         <div
-        className={`fixed top-0 left-0 w-full h-screen bg-primary text-white flex pt-5 flex-col z-50 transform transition-transform duration-500 ease-in-out ${
-          isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
+          className={`fixed top-0 left-0 w-full h-screen bg-primary text-white flex pt-5 flex-col z-50 transform transition-transform duration-500 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+            }`}
+        >
           {/* Close Button */}
           <div className="flex justify-end items-center px-4 py-3 bg-primary">
             <button
@@ -163,7 +163,7 @@ const Navbar = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               CLOSE
-              <Image src={close} alt="close" />
+              <Image src={close} alt="close" loading="lazy" />
             </button>
           </div>
 
@@ -181,6 +181,7 @@ const Navbar = () => {
                         }
                       >
                         <Image
+                          loading="lazy"
                           src={DownArrow}
                           alt="down-arrow"
                           className={`transform transition-transform ${openIndex === index ? "rotate-180" : "rotate-0"

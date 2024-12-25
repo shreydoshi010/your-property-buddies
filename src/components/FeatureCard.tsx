@@ -65,6 +65,7 @@ const FeatureCard: React.FC = () => {
               </Button>
               <div className="absolute mb-4 right-4 top-16">
                 <Image
+                  loading="eager"
                   src={card.imageUrl}
                   alt={card.title}
                   className="mx-auto"

@@ -42,10 +42,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, btntitle, firstdesc, i
           </Button>
         </div>
         <div>
-          <Image src={image} alt="hero" className="h-auto w-[533px]" width={600} height={600} />
+          <Image src={image} loading="eager" alt="hero" className="h-auto w-[533px]" width={600} height={600} />
         </div>
       </div>
-      <Image src={wave} alt="wave" className="w-full" />
+      <Image src={wave} loading="eager" alt="wave" className="w-full" />
     </section>
   )
 }

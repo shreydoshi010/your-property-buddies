@@ -5,12 +5,9 @@ import { Button } from "./ui/Button";
 import StepCard from "./StepCard";
 
 interface Step {
-
-    title: string;
-
-    description?: string;
-
-    isLastStep: boolean;
+  title: string;
+  description?: string;
+  isLastStep: boolean;
 }
 
 interface HowItWorksProps {
@@ -43,6 +40,7 @@ const HowItWorks: React.FC<HowItWorksProps> = ({ title, btntitle, stepData, imag
       </div>
       <div className="sm:mt-10 md:mt-10 xl:mt-10 w-[45%] sm:w-full md:w-full xl:w-full">
         <Image
+          loading="lazy"
           src={image}
           alt="Phone Mockup"
           className="rounded-lg shadow-lg"

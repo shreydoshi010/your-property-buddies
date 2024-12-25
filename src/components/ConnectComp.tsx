@@ -87,6 +87,7 @@ const ConnectComp: React.FC<ConnectCompProps> = ({ ifPartner }) => {
             <div key={index} className="p-6 flex justify-between gap-x-4">
               <div className="-mt-5">
                 <Image
+                  loading="lazy"
                   src={card.imageUrl}
                   alt={card.title}
                   className="mx-auto"

@@ -7,7 +7,7 @@ const WhyUs = () => {
     return (
         <section className='w-[80%] mx-auto py-14 sm:w-full md:w-full xl:w-full sm:pb-0 md:pb-0 xl:pb-0'>
             <div className='flex items-center gap-8 sm:flex-col-reverse md:flex-col-reverse xl:flex-col-reverse'>
-                <Image src={whyUs} alt="why us?" className='w-[535px] sm:w-full md:w-full xl:w-full sm:h-[400px] md:h-[400px] xl:h-[500px]' />
+                <Image loading="lazy" src={whyUs} alt="why us?" className='w-[535px] sm:w-full md:w-full xl:w-full sm:h-[400px] md:h-[400px] xl:h-[500px]' />
                 <div className='sm:w-[90%] md:w-[90%] xl:w-[90%]'>
                     <Typography variant='h2'>Why Us?</Typography>
                     <div className='mt-4 flex flex-col gap-8'>
